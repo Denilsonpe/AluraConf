@@ -1,0 +1,71 @@
+/*estilo da parte do cabeçalho*/
+/*classe informada no html na tag <header>*/
+.cabecalho-info{
+    /*insere uma imagem como fundo do cabeçalho*/
+    background: url(../img/destaque.jpeg);
+    /*propriedade cover p img crescer ate ocupar toda a area do background*/
+    background-size: cover;
+    /*preenche uma borda a partir do topo do cabecalho*/
+    padding-top: 35px;
+    
+}
+/*alinha ao centro o menu*/
+.cabecalho-info .menu-info {
+    text-align: center;
+}
+/*coloca as li uma do lado da outra*/
+.cabecalho-info .menu-info .item-info{
+    display: inline-block;
+    margin: 0 2px 32px 0;
+}
+/*acessa os itens do menu pela tag<a>*/
+.cabecalho-info .menu-info .item-info a{
+    color: white;/*cor da letra*/
+    padding: 16px;/*borda de preenchimento c espaço de 16px entre o conteudo e borda */
+    background: rgba(0, 0, 0, 0.1);/*cor de fundo com uma transparencia*/
+    border-radius: 4px;/*arrendonda os cantos da borda*/
+    text-transform: uppercase;/*coloca todas as letras em maiusculas*/
+    text-decoration: none;/*retira a marcação de link(underline,etc)*/
+    transition: background-color 0.5s;/*tempo para a transição*/
+}
+/*cria um efeito de transição mudando a cor de fundo*/
+.cabecalho-info .menu-info .item-info a:hover{
+    background-color: #48a3a6;
+}
+
+.cabecalho-info .jumbotron{
+    padding: 0 0 44px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cabecalho-info .painel-principal{
+    color: white;
+    text-shadow: 4px 4px 10px black;
+}
+
+.cabecalho-info .painel-principal .title{
+    font-size:  3em;
+}
+
+.cabecalho-info .painel-principal .subtitle{
+    color: #64ff64;
+    font-size: 2.6em;
+    margin-top: 8px;
+}
+
+
+.cabecalho-info .painel-subscribe {
+    margin-top: 28px;
+}
+
+@media(min-width: 650px) {
+
+    .cabecalho-info .jumbotron {
+
+        font-size: 28px;
+    }
+
+}
+
+/*pate do conteudo descriçao*/
